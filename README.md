@@ -44,7 +44,7 @@ iface eth0 inet static
 	netmask 255.255.255.0
 	gateway 192.217.1.200
 ```
-*Heiter
+* Heiter
 ```
 auto eth0
 iface eth0 inet static
@@ -609,6 +609,9 @@ Restart nginx
 ```
 service nginx restart
 ```
+![image](https://github.com/fzhmghfrh/Jarkom-Modul-3-E22-2023/blob/main/3/img41.jpg)
+![image](https://github.com/fzhmghfrh/Jarkom-Modul-3-E22-2023/blob/main/3/img442.jpg)
+
 
 ## Soal 7
 Kepala suku dari Bredt Region memberikan resource server sebagai berikut:
@@ -797,8 +800,9 @@ Tambahkan konfigurasi berikut pada /etc/nginx/sites-available/lb-proxy di Eisen 
 ```
 Testing pada salah satu Client:
 - Masukkan username
+![image](https://github.com/fzhmghfrh/Jarkom-Modul-3-E22-2023/blob/main/3/img54.jpg)
 - Masukkan password
-- Tampilan website
+![image](https://github.com/fzhmghfrh/Jarkom-Modul-3-E22-2023/blob/main/3/img57.jpg)
 
 
 ## Soal 11
@@ -836,7 +840,7 @@ Testing pada salah satu client yaitu Revolte Client:
 ```
 lynx granz.channel.e22.com/its
 ```
-
+![image](https://github.com/fzhmghfrh/Jarkom-Modul-3-E22-2023/blob/main/3/img64.jpg)
 
 ## Soal 12
 Selanjutnya LB ini hanya boleh diakses oleh client dengan IP [Prefix IP].3.69, [Prefix IP].3.70, [Prefix IP].4.167, dan [Prefix IP].4.168. hint: (fixed in dulu clinetnya)
@@ -899,11 +903,6 @@ Tambahkan konfigurasi berikut pada Eisen Load Balander pada /etc/nginx/sites-ava
 }
 ```
 
-- Revolte
-- Ritcher
-- Sein
-- Stark
-
 
 ## Soal 13
 Semua data yang diperlukan, diatur pada Denken dan harus dapat diakses oleh Frieren, Flamme, dan Fern
@@ -941,6 +940,7 @@ FLUSH PRIVILEGES;
 
 mysql < ~/script.sql
 ```
+![image](https://github.com/fzhmghfrh/Jarkom-Modul-3-E22-2023/blob/main/3/img71.jpg)
 
 ## Soal 14
 Frieren, Flamme, dan Fern memiliki Riegel Channel sesuai dengan quest guide berikut. Jangan lupa melakukan instalasi PHP8.0 dan Composer
@@ -1187,8 +1187,11 @@ service php8.0-fpm start
 ```
 
 - Migrasi database
+![image](https://github.com/fzhmghfrh/Jarkom-Modul-3-E22-2023/blob/main/3/img85.jpg)
 - Data database
+![image](https://github.com/fzhmghfrh/Jarkom-Modul-3-E22-2023/blob/main/3/img88.jpg)
 - lynx riegel.canyon.e22.com
+![image](https://github.com/fzhmghfrh/Jarkom-Modul-3-E22-2023/blob/main/3/img91.jpg)
 
 
 ## Soal 15
