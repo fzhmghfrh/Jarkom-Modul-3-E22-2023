@@ -7,7 +7,7 @@
 
 
 ## Topologi
-
+![image](https://github.com/fzhmghfrh/Jarkom-Modul-3-E22-2023/blob/main/3/top.png)
 ## Configuration
 * Aura
 ```
@@ -350,7 +350,9 @@ subnet 192.217.3.0 netmask 255.255.255.0 {
     max-lease-time 5760;
 }
 ```
-
+![image](https://github.com/fzhmghfrh/Jarkom-Modul-3-E22-2023/blob/main/3/img24.jpg)
+![image](https://github.com/fzhmghfrh/Jarkom-Modul-3-E22-2023/blob/main/3/img25.jpg)
+![image](https://github.com/fzhmghfrh/Jarkom-Modul-3-E22-2023/blob/main/3/img29.jpg)
 ## Soal 6
 Pada masing-masing worker PHP, lakukan konfigurasi virtual host untuk website berikut dengan menggunakan php 7.3.
 ### Jawab
@@ -626,7 +628,7 @@ Jalankan script benchmarking
 ```
 ab -n 1000 -c 100 http://granz.channel.com/
 ```
-
+![image](https://github.com/fzhmghfrh/Jarkom-Modul-3-E22-2023/blob/main/3/img27.jpg)
 ## Soal 8
 Karena diminta untuk menuliskan grimoire, buatlah analisis hasil testing dengan 200 request dan 10 request/second masing-masing algoritma Load Balancer dengan ketentuan sebagai berikut:
 - Nama Algoritma Load Balancer
@@ -643,6 +645,7 @@ Algoritma Round Robin (Default):
         server 192.217.3.3; #IP Lugner
  }
 ```
+![image](https://github.com/fzhmghfrh/Jarkom-Modul-3-E22-2023/blob/main/3/img32.jpg)
 Algoritma Least Connection:
 ```
  upstream granz  {
@@ -656,6 +659,7 @@ Hasil Testing
 ```
 ab -n 200 -c 10 http://granz.channel.e22.com/
 ```
+![image](https://github.com/fzhmghfrh/Jarkom-Modul-3-E22-2023/blob/main/3/img36.jpg)
 Algoritma IP Hash:
 ```
  upstream granz  {
@@ -669,7 +673,7 @@ Hasil Testing
 ```
 ab -n 200 -c 10 http://granz.channel.e22.com/
 ```
-
+![image](https://github.com/fzhmghfrh/Jarkom-Modul-3-E22-2023/blob/main/3/img40.jpg)
 Algoritma Generic Hash:
 ```
  upstream granz  {
@@ -683,6 +687,7 @@ Hasil Testing
 ```
 ab -n 200 -c 10 http://granz.channel.e22.com/
 ```
+![image](https://github.com/fzhmghfrh/Jarkom-Modul-3-E22-2023/blob/main/3/img44.jpg)
 
 Algoritma Weighted Round Robin:
 ```
@@ -696,8 +701,13 @@ Hasil Testing
 ```
 ab -n 200 -c 10 http://granz.channel.e22.com/
 ```
-Hasil Grafik
+![image](https://github.com/fzhmghfrh/Jarkom-Modul-3-E22-2023/blob/main/3/img48.jpg)
 
+- Hasil Grafik
+
+
+![image](https://github.com/fzhmghfrh/Jarkom-Modul-3-E22-2023/blob/main/3/img67.jpg)
+![image](https://github.com/fzhmghfrh/Jarkom-Modul-3-E22-2023/blob/main/3/img70.jpg)
 
 ## Soal 9
 Dengan menggunakan algoritma Round Robin, lakukan testing dengan menggunakan 3 worker, 2 worker, dan 1 worker sebanyak 100 request dengan 10 request/second, kemudian tambahkan grafiknya pada grimoire.
@@ -713,7 +723,10 @@ upstream granz  {
 - Hasil Testing
 ```
 ab -n 100 -c 10 http://granz.channel.e22.com/
+```
+![image](https://github.com/fzhmghfrh/Jarkom-Modul-3-E22-2023/blob/main/3/img52.jpg)
 Hasil testing 2 Worker dengan round robin:
+```
  upstream granz  {
         #server 192.217.3.1; #IP Lawine
         server 192.217.3.2; #IP Linie
@@ -724,6 +737,7 @@ Hasil testing 2 Worker dengan round robin:
 ```
 ab -n 100 -c 10 http://granz.channel.e22.com/
 ```
+![image](https://github.com/fzhmghfrh/Jarkom-Modul-3-E22-2023/blob/main/3/img56.jpg)
 - Hasil testing 1 Worker dengan round robin:
 ```
  upstream granz  {
@@ -736,7 +750,14 @@ ab -n 100 -c 10 http://granz.channel.e22.com/
 ```
 ab -n 100 -c 10 http://granz.channel.e22.com/
 ```
+![image](https://github.com/fzhmghfrh/Jarkom-Modul-3-E22-2023/blob/main/3/img60.jpg)
+
+
 - Hasil Grafik
+
+
+![image](https://github.com/fzhmghfrh/Jarkom-Modul-3-E22-2023/blob/main/3/img77.jpg)
+![image](https://github.com/fzhmghfrh/Jarkom-Modul-3-E22-2023/blob/main/3/img81.jpg)
 
 
 ## Soal 10
